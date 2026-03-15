@@ -1,0 +1,42 @@
+.details {
+  padding-top: 92px;
+
+  @include onTablet {
+    padding-top: 120px;
+  }
+
+  @include onDesktop {
+    padding-top: 144px;
+  }
+
+  &__wrapper {
+    display: grid;
+    row-gap: 40px;
+  }
+
+  @include onTablet {
+    row-gap: 48px;
+  }
+
+  &__explore-container {
+    @include page-grid;
+
+    margin-top: 40px;
+
+    @include onDesktop {
+      margin-top: 48px;
+    }
+  }
+
+  &__explore-link {
+    grid-column: 1 / -1;
+
+    @include onTablet {
+      grid-column: 2 / -2;
+    }
+
+    @include onDesktop {
+      grid-column: 5 / -5;
+    }
+  }
+}

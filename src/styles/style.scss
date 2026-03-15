@@ -1,0 +1,29 @@
+@import './utils/variables';
+@import './utils/mixins';
+@import 'blocks/page';
+@import 'blocks/header';
+@import 'blocks/top-bar';
+@import 'blocks/icon';
+@import 'blocks/menu';
+@import 'blocks/nav';
+@import 'blocks/main';
+@import 'blocks/about';
+@import 'blocks/section-title';
+@import 'blocks/compare';
+@import 'blocks/product';
+@import 'blocks/details';
+@import 'blocks/detail';
+@import 'blocks/primary-button';
+@import 'blocks/contact-us';
+@import 'blocks/footer';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}

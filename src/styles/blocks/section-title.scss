@@ -1,0 +1,22 @@
+.section-title {
+  margin: 0;
+  margin-bottom: $space-2xl;
+  font-weight: 500;
+  font-size: $font-size-xl;
+  line-height: $line-height-tight;
+  text-align: center;
+  letter-spacing: $letter-spacing-tight;
+
+  @include onTablet {
+    margin-bottom: $space-3xl;
+    font-size: $font-size-2xl;
+  }
+
+  @include onDesktop {
+    font-size: $font-size-3xl;
+  }
+
+  &--align--left {
+    text-align: left;
+  }
+}

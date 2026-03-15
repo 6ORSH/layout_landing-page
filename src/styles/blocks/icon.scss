@@ -1,0 +1,30 @@
+.icon {
+  display: block;
+  width: $space-lg;
+  height: $space-lg;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include hover(transform, scale(1.2));
+
+  @include onTablet {
+    width: $space-xl;
+    height: $space-xl;
+  }
+
+  &--phone {
+    background-image: url('../assets/icons/icon-phone.svg');
+  }
+
+  &--menu {
+    background-image: url('../assets/icons/icon-menu.svg');
+
+    &:hover {
+      background-image: url('../assets/icons/icon-menu-hover.svg');
+    }
+  }
+
+  &--close {
+    background-image: url('../assets/icons/icon-close.svg');
+  }
+}

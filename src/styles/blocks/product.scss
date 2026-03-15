@@ -1,0 +1,39 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: $line-height-normal;
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &__photo {
+    width: 100%;
+    transition: all $effectDuration;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__title {
+    margin-top: $space-xl;
+    font-weight: 700;
+    font-size: $font-size-lg;
+  }
+
+  &__description {
+    margin-top: $space-xxs;
+    font-weight: 400;
+    font-size: $font-size-base;
+  }
+
+  &__price {
+    margin-top: $space-sm;
+    font-weight: 700;
+    font-size: $font-size-lg;
+  }
+}

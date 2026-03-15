@@ -1,0 +1,29 @@
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: $space-lg;
+
+  @include onTablet {
+    padding-block: $space-lg-plus;
+  }
+
+  &__icons {
+    display: flex;
+    gap: $space-lg;
+  }
+
+  &__logo-link {
+    display: flex;
+  }
+
+  &__logo-img {
+    height: 38px;
+
+    @include hover(transform, scale(1.2));
+
+    @include onTablet {
+      height: $button-height;
+    }
+  }
+}

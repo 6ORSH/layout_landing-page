@@ -1,0 +1,54 @@
+.menu {
+  height: 100dvh;
+  padding-bottom: 100px;
+  overflow: auto; /* to scroll the menu if needed */
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: $menu-bg-color;
+  color: $dark-text-color;
+
+  &__top {
+    position: sticky; /* to keep cross always visible */
+    top: 0;
+    z-index: 1;
+    margin-bottom: $space-lg;
+    background-color: $menu-bg-color;
+
+    @include onTablet {
+      margin-bottom: $space-xxs;
+    }
+  }
+
+  &__nav {
+    margin-bottom: $space-xl-plus;
+  }
+
+  &__phone-number {
+    display: block;
+    margin-bottom: $space-sm;
+    width: fit-content;
+    font-size: $font-size-base;
+    line-height: 27px;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &__book-test-ride {
+    display: block;
+    padding-bottom: 7px;
+    width: fit-content;
+    font-size: $font-size-xs;
+    line-height: 16px;
+    letter-spacing: $letter-spacing-nav;
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1px solid $dark-text-color;
+  }
+
+  &__phone-number,
+  &__book-test-ride {
+    &:hover {
+      font-weight: 700;
+    }
+  }
+}

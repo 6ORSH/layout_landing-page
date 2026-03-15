@@ -1,0 +1,42 @@
+.about {
+  @include page-grid;
+
+  padding-top: $space-6xl;
+
+  @include onTablet {
+    padding-top: $space-5xl;
+  }
+
+  @include onDesktop {
+    padding-bottom: $space-7xl;
+  }
+  &__title {
+    grid-column: 1 / -1;
+
+    @include onTablet {
+      grid-column: 1 / 4;
+    }
+
+    @include onDesktop {
+      grid-column: span 4;
+    }
+  }
+
+  &__content {
+    grid-column: 1 / -1;
+
+    @include onTablet {
+      grid-column: 4 / -1;
+    }
+
+    @include onDesktop {
+      grid-column: 6 / -2;
+    }
+  }
+
+  &__description {
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 140%;
+  }
+}

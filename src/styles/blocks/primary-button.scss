@@ -1,0 +1,23 @@
+.primary-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: $button-height;
+  font-weight: 700;
+  font-size: $font-size-base;
+  line-height: 27px;
+  background-color: $button-bg-color;
+  border-radius: $radius-pill;
+  color: $dark-text-color;
+  text-decoration: none;
+  cursor: pointer;
+  transition: box-shadow $effectDuration;
+
+  &:hover {
+    box-shadow: $shadow-primary;
+  }
+
+  &:active {
+    box-shadow: $shadow-primary-strong;
+  }
+}
