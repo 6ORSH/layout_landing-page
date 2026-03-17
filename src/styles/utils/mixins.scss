@@ -1,10 +1,10 @@
-@mixin on-tablet {
+@mixin onTablet {
   @media (min-width: $tablet-min-width) {
     @content;
   }
 }
 
-@mixin on-desktop {
+@mixin onDesktop {
   @media (min-width: $desktop-min-width) {
     @content;
   }
@@ -13,11 +13,11 @@
 @mixin content-padding-inline {
   padding-inline: $space-md;
 
-  @include on-tablet {
+  @include onTablet {
     padding-inline: $space-4xl;
   }
 
-  @include on-desktop {
+  @include onDesktop {
     max-width: $layout-max-width;
     padding-inline: $space-5xl;
     margin-inline: auto;
@@ -47,13 +47,13 @@
   column-gap: $space-md;
   grid-template-columns: repeat(var(--columns), 1fr);
 
-  @include on-tablet {
+  @include onTablet {
     --columns: 6;
 
     column-gap: $space-lg;
   }
 
-  @include on-desktop {
+  @include onDesktop {
     --columns: 12;
   }
 }

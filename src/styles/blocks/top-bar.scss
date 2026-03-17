@@ -26,4 +26,34 @@
       height: $button-height;
     }
   }
+
+  &__phone-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $main-text-color;
+    text-decoration: none;
+  }
+
+  &__phone-number {
+    position: absolute;
+    right: 100%;
+    margin-right: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(10px) scale(0.95);
+    transition: all $effectDuration;
+  }
+}
+
+.top-bar__phone-link:hover .top-bar__phone-number {
+  opacity: 1;
+  transform: translateX(0);
 }

@@ -55,9 +55,12 @@
             </a>
             <div class="top-bar__icons">
               <a
+                class="top-bar__phone-link"
                 href="tel:+380123456789"
-                class="icon icon--phone"
-              ></a>
+              >
+                <span class="top-bar__phone-number">+380-12345-6789</span>
+                <div class="icon icon--phone top-bar__phone-icon"></div>
+              </a>
               <a
                 href="#menu"
                 class="icon icon--menu"
@@ -364,6 +367,7 @@
                 class="contact-us__form"
                 method="post"
                 onsubmit="this.reset(); return false;"
+                autocomplete="none"
               >
                 <label
                   for="name"
@@ -376,7 +380,7 @@
                   name="name"
                   type="text"
                   placeholder="Name"
-                  autocomplete="name"
+                  autocomplete="none"
                   class="contact-us__input"
                   required
                 />
@@ -392,7 +396,7 @@
                   name="email"
                   type="email"
                   placeholder="Email"
-                  autocomplete="email"
+                  autocomplete="off"
                   class="contact-us__input"
                   required
                 />
@@ -407,7 +411,7 @@
                   id="message"
                   name="message"
                   placeholder="Message"
-                  autocomplete="off"
+                  autocomplete="none"
                   class="contact-us__message-textarea contact-us__input"
                   required
                 ></textarea>
