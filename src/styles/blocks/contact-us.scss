@@ -50,6 +50,10 @@
     &:focus {
       color: $input-text-color;
     }
+
+    &:focus-visible {
+      outline: none;
+    }
   }
 
   &__message-textarea {

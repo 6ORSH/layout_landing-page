@@ -7,9 +7,6 @@
     padding-top: $space-5xl;
   }
 
-  @include onDesktop {
-    padding-bottom: $space-7xl;
-  }
   &__title {
     grid-column: 1 / -1;
 

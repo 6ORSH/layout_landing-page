@@ -42,6 +42,7 @@
   }
 
   &__phone-number {
+    display: none;
     position: absolute;
     right: 100%;
     margin-right: 12px;
@@ -50,10 +51,16 @@
     pointer-events: none;
     transform: translateX(10px) scale(0.95);
     transition: all $effectDuration;
+
+    @include onDesktop {
+      display: block;
+    }
   }
 }
 
 .top-bar__phone-link:hover .top-bar__phone-number {
-  opacity: 1;
-  transform: translateX(0);
+  @include onDesktop {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
